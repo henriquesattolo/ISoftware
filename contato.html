@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+	<meta charset="utf-8">
+			<!-- Pilares da Indexação (SEO): para o site ser encontrado - otimização de mecanismos de busca
+1. tag title adequada, bem estruturada
+2. utilizar a tag h1 (só pode ter um em cada página) nas páginas
+3. metas keywords e description 
+nos passos 1 e 3 tomar cuidado com o limite aproximado de caracteres que tem que ser de no máximo 200 caracteres
+* Google Analytics -->	
+	<meta name="Keywords" content="ISoftware - Sistemas de Gestão">
+			
+	<meta name="Description" content="ISoftware - Sistemas de Gestão">
+			
+	<title>ISoftware - Sistemas de Gestão</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	
+	<title>ISoftware</title>
+	</head>
+	<body>
+		<div id="principal">
+			<header id="topo">
+				<div id="logotipo">
+					<a href=""><img src="imagens/logo.png" alt=""></a>
+				</div>
+				<nav id="menu">
+					<ul id="navegacao">
+						<li><a href="index.html" class="linkmenu" target="_self">Home</a></li>
+						<li><a href="sobre.html" class="linkmenu" target="_self">Sobre</a></li>
+						<li><a href="contato.html" class="linkmenu">Contatos</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="areacontato">
+				<div id="mapa">
+					<h2 class="center">Nossa Localização:</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9926104293595!2d-47.64789008442174!3d-22.72851603724946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631a09ac7b2e1%3A0x197834b105f878e3!2sSenac+Piracicaba!5e0!3m2!1spt-BR!2sbr!4v1554763557237!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			<div id="contato">
+			<h2 class="center">Mande sua Mensagem:</h2>
+				<form name="formcontato" method="post" action="" autocomplete="on" id="fcontato"></form>
+					<form>
+					<fieldset id="dadosmensagem">
+						<legend>Dados da mensagem:</legend>
+						<label for="nome" class="label">Nome:</label>
+							<input type="text" name="nome" placeholder="Digite seu nome" required autocomplete="off" class="campo"> 
+					<br><label for="email" class="label">E-Mail:</label>
+							<input type="text" name="email" placeholder="Digite seu email" required autocomplete="off" class="campo"> 
+					<br><label for="assunto" class="label">Assunto:</label> 
+						    <select name="assunto" class="campo">
+								 <option>Selecione o Assunto</option>
+								 <option value="duvidas">Dúvidas</option>
+								 <option value="criticas">Críticas</option>
+								 <option value="elogios">Elogios</option>
+								 <option value="sugestoes">Sugestões</option>
+							</select>
+							<br>
+						<label for="mensagem" class="label">Mensagem:</label>
+							<textarea name="mensagem" placeholder="Digite sua mensagem" required class="campo"></textarea>
+						</fieldset>
+						<fieldset id="dadospessoais">
+							 <legend>Dados pessoais:</legend>
+								<p>Sexo:</p>
+								<label>
+									<input type="radio" name="sexo" value="masculino" checked>Masculino
+								</label>
+								<label>
+									<input type="radio" name="sexo" value="feminino" checked>Feminino
+								</label>
+						</fieldset>
+						<input type="submit" name="enviar" value="Enviar" id="enviar" class="direita">
+					</form>
+			</div>
+				<div class="clearfix"></div>
+				<div id="video">
+					<h2>Vídeo Institucional</h2>
+					<p>ERP é a sigla para Enterprise Resource Planning, que em português significa Sistema Integrado de Gestão Empresarial. Trata-se de um software corporativo capaz de controlar todas as informações de uma empresa, integrando e gerenciando dados, recursos e processos, das áreas de Vendas, Finanças, Contabilidade, Fiscal, Estoque, Compras, Recursos Humanos, Produção e Logística, aumentando seu poder de tomada de decisão com maior agilidade e clareza proporcionadas por uma base de dados consolidada, contendo todas as variáveis dos processos.
+					</p>
+					<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/6qys-562kp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div> 
+			<div class="clearfix"></div>
+			<footer id="rodape">
+				<ul id="navrodape">
+					<li><a href="#" class="linkrodape">Termos e Condições</a></li>
+					<li><a href="sobre.html" class="linkrodape">Mais sobre nós</a></li>
+					<li><a href="contato.html" class="linkrodape">Fale Conosco</a></li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>

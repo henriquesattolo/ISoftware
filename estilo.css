@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer, header, section, article, nav, aside, hrgroup{
+	display: block;
+}
+
+/*----------------------------------------------Body--------------------------------------------*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color:black;
+	background:#589CBE;
+	background-size: cover;
+}
+
+/*----------------------------------------DIV principal-----------------------------------------*/
+
+#principal{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	background: #589CBE;
+}
+
+/*DIV Topo*/
+
+#topo{
+	width: 100%;
+	height: 100px;
+}
+
+/*-----------------------------------------DIV Logotipo------------------------------------------*/
+
+#logotipo{
+	width: 300px;
+	height: 100px;
+	padding-left: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+}
+#logotipo img{
+	width: 70px;
+	height: 70px;
+	float: center;
+}
+
+/*-----------------------------------------DIV Navegação-----------------------------------------*/
+
+#navegacao{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table;
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	text-align: right;
+}
+#navegacao li{
+	float: left;
+	margin-right: 10px;
+}
+
+/*---------------------------------------------Menu---------------------------------------------*/
+
+#menu{
+	width: 900px;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*------------------------------------Botões menu e link menu-----------------------------------*/
+
+a.linkmenu:link, a.linkmenu:visited{
+	width: 240px;
+	height: 200px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transform: matrix(1.1);
+	transition: all 0.3s ease;
+}
+a.linkmenu:hover, a.linkmenu:active{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+/*---------------------------------------------Banner--------------------------------------------*/
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+    /* daqui: http://csswizardry.com/2011/10/fully-fluid-responsive-css-carousel/ */
+}
+@keyframes go{
+    0%    {  }
+    100%  { left:-300%; }
+}
+@keyframes back{
+    0%    { left:0; }
+    100%  { left:100%; }
+}
+.carousel{
+    width:1200px; 
+    overflow:hidden; 
+    height:530px;}
+.paineis{
+    width:500% /* article w * 5 */; 
+    overflow:hidden;  
+    height:100%;  
+    animation:carousel 30s infinite; position:relative;}
+article{
+    float:left; 
+    width:20%;} 
+img{
+    height:100%; 
+    width:100%;
+	border-radius: 5px;
+	border: rgba(0,0,0,1.00) 1px;}
+
+/*---------------------------DIV Texto Conteudo (Embaixo da Imagem Banner)--------------------*/
+
+#textoconteudo{
+	width: 1180px;
+	min-height: 360px;
+	background:#589CBE;
+	padding: 10px;
+	color: white;
+}
+
+/*---------------------------------------Classe serviços-------------------------------------*/
+
+.servico{
+	height: 130px; 
+	margin-bottom: 10px;
+	background: rgba(228,233,237,1.00);
+	padding: 15px;
+	text-align: justify;
+	line-height: 15px;
+	border-radius: 5px;
+	border: rgba(0,0,0,1.00) 1px;
+	color: rgba(44,70,94,1.00);
+}
+.servico img{
+	max-width: 250px;
+	height: auto;
+}
+
+/*---------------------------------------Classe Sobre----------------------------------------*/
+
+.textoconteudo{
+	width: 1160px;
+	min-height: 180px;
+	float: left;
+	text-align: justify;
+	padding: 10px;
+	background: #E4E9ED;
+	line-height: 15px;
+	border-radius: 5px;
+	border: rgba(0,0,0,1.00) 1px;
+	margin: 10px;
+	font-size: 14px;
+	color: rgba(44,70,94,1.00);
+}
+
+/*------------------------------------Botão saiba mais-------------------------------------*/
+
+a.estilo_botao:link, a.estilo_botao:visited{
+	width: 85px;
+	height: 35px;
+	background: rgba(30,145,197,1.00);
+	display: block;
+	border: white 1px groove;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;
+	margin-top: -20px;
+	border-radius: 5px;
+	transform: matrix(1.1);
+	transition: all 0.2s ease;
+}
+a.estilo_botao:hover, a.estilo_botao:active{
+	background: rgba(30,145,197,1.00);
+	border: white 1px groove;
+	color: white;
+	text-shadow: rgba(60,60,60,1) 1px 1px 1px;
+	box-shadow: rgba(60,60,60,0.5) 5px 5px 5px;
+}
+
+/*-----------------------------------------Rodapé-------------------------------------------------*/
+
+#rodape{	
+	width: 1200px;
+	height: 100px;
+	background: #589CBE;
+	display: table-cell;
+	vertical-align: middle;
+	background-size: cover;
+	background-blend-mode:luminosity;
+}
+	a.linkrodape:link, a.linkrodape:visited{
+	width: 240px;
+	height: 200px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	transform: matrix(1.1);
+	transition: all 0.3s ease;
+}
+	a.linkrodape:hover, a.linkrodape:active{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;	
+}
+#navrodape{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table;
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	text-align: right;
+}
+#navrodape li{
+	float: left;
+	margin-right: 10px;
+}
+.inforodape{
+	
+}
+
+/*-----------------------------------------Area contato-----------------------------------------*/
+
+#areacontato{
+	width: 98%;
+	height: auto;
+	padding: 1%;
+	color: white;
+}
+#mapa{
+	width: 45%;
+	height: 600px;
+	float: left;
+}
+#contato{
+	width: 45%;
+	min-height: 600px;
+	float: right;
+}
+#video{
+	width: 100%;
+	min-height: 350px;
+	color: white;
+	text-align: center;
+}
+#dadosmensagem label{
+	display: block;
+	width: 100px;
+	height: 20px;
+	float: left;
+	border-radius: 5px;
+}
+#contato textarea{
+	width: 300px;
+	height: 100px;
+	resize: none;
+	border: rgba(103,103,103,1.00) thin dashed;
+	border-radius: 5px;
+	background: rgba(62, 49, 40, 0.5);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+/*------------------------------------------Classe Campo-------------------------------------------*/
+
+.campo{
+	width: 300px;
+	height: 25px;
+	border: rgba(103,103,103,1.00) thin dashed;
+	border-radius: 5px;
+	background: rgba(62, 49, 40, 0.5);
+	margin-bottom: 5px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+/*------------------------------------------Botao Enviar------------------------------------------*/
+
+#enviar{
+	width: 85px;
+	height: 35px;
+	background:rgba(30,145,197,1.00);
+	display: block;
+	border: white 1px groove;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+/*-----------------------------------------Classe youtube----------------------------------------*/
+
+.youtube{
+	width: 800px;
+	height: 500px;
+}
+
+
+/*------------------Declarando que todos os H1 e H2 do site vão ter esse comportamento-----------*/
+
+h1, h2{
+	color: white;
+}
+
+/*----------------------------------------Classes Padrões----------------------------------------*/
+
+.esquerda{
+	float: left;
+}
+.direita{
+	float: right;
+}
+.margemd10{
+	margin-right: 10px;
+}
+.center{
+	text-align: center;
+}
+.clearfix{
+	clear: both;
+}
+.recuo{
+	text-indent: 4em
+}
+
